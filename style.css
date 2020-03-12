@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #333;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* app layout */
+
+.calc {
+    background: black;
+    width: 390px;
+    border: 10px solid black;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1%;
+}
+
+.row:last-child {
+    margin-bottom: 0;
+}
+
+
+.screen {
+    background: #222;
+    color: #fff;
+    height: 75px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 0 10px 10px 0;
+    margin-bottom: 10px;
+    font-family: monospace;
+    font-size: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* button layout */
+
+.calc-btn {
+    flex-basis: 24.25%;
+}
+
+.stretch-2 {
+    flex-basis: 49.5%;
+}
+
+.stretch-3 {
+    flex-basis: 74.75%;
+}
+
+/* button style */
+
+.calc-btn {
+    font-size: 1.8rem;
+    padding: .5em;
+    background: silver;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.calc-btn:hover,
+.calc-btn:focus {
+    background: whitesmoke;
+}
+
+.calc-btn:active {
+    background: silver;
+}
+
+.calc-btn:last-child {
+    background: peru;
+    color: #fff;
+}
+
+.calc-btn:last-child:hover,
+.calc-btn:last-child:focus {
+    background: orange;
+}
+
+.calc-btn:last-child:active {
+    background: peru;
+}
